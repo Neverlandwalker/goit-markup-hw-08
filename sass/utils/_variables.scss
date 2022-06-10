@@ -1,0 +1,25 @@
+/* Базовые цвета
+background: #212121;
+background: #FFFFFF;
+background: #757575;
+background: #2196F3;
+background: #EEEEEE;
+background: #000000;
+background: #F5F4FA;
+background: #FFFFFF99;
+background: #2F303A;
+background: #ECECEC;
+*/
+/* index.html*/
+:root {
+    --primary-text-color: #212121;
+    --logo-span-color: #2196f3;
+    --filler-colour: #2196f3;
+    --contact-links-color: #757575;
+    --filler-text-color: #757575;
+    --hero-background-color: #2F303A;
+    --hero-text-color: #ffffff;
+    --footer-background-color: #2F303A;
+    --portfolio-buttons-background-color: #F5F4FA;
+    --clients-colour: #AFB1B8;
+}

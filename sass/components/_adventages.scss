@@ -1,0 +1,124 @@
+/* Adventeges */
+.adventeges-block {
+    display: flex;
+    text-align: left;
+
+}
+
+.adventeges-block-element {
+    margin-left: 30px;
+    &::before {
+            display: block;
+            content: "";
+            margin-bottom: 30px;
+            height: 120px;
+            border-radius: 4px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #F5F4FA;
+        }
+    &:first-child {
+                    margin-left: 0px;
+                }
+}
+
+
+
+.icon-sattelite::before {
+    background-image: url("../images/Presprite/sattelite.svg");
+}
+
+.icon-clock::before {
+    background-image: url("../images/Presprite/clock.svg");
+}
+
+.icon-diagrame::before {
+    background-image: url("../images/Presprite/diagrame.svg");
+}
+
+.icon-austronavt::before {
+    background-image: url("../images/Presprite/austronavt.svg");
+}
+
+
+
+.adventeges-header-text {
+
+    margin-bottom: 10px;
+    width: 270px;
+    height: 16px;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: inherit;
+}
+
+.adventeges-text {
+    height: 75px;
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--contact-links-color);
+}
+
+/* What we do */
+.what-we-do {
+
+    padding-top: 0px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit;
+}
+
+.what-we-do-list {
+    display: flex;
+    align-content: center;
+
+}
+
+.what-we-do-element {
+    position: relative;
+    height: 294px;
+    &:not(:first-child) {
+            margin-left: 30px;
+        }
+}
+
+
+
+.what-we-do-overlay {
+
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.what-we-do-overlay-text {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--hero-text-color);
+}
+
+.what-we-do-header {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
