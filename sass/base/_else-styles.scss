@@ -48,11 +48,40 @@ img {
     height: auto;
 }
 .container {
-    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 15px 0px 15px;
+
+    
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+
+    @include mq(mobile) {
+        width: 480px;
+    }
+
+   
+
+    @include mq(tablet) {
+        width: 768px;
+    }
+
+   
+
+    @include mq(desktop) {
+        width: 1200px;
+    }
 }
 .section {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @include mq(desktop) {
+        padding: 94px 0;
+        
+    }
+    
+    
 }

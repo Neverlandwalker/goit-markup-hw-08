@@ -1,5 +1,6 @@
 /* Footer */
 .footer {
+
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--footer-background-color);
@@ -7,23 +8,44 @@
 }
 
 .bottom-block {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+
+    @include mq(tablet-only){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    @include mq(desktop){
+        display: flex;
+        align-items: baseline;
+    }
+    
+}
+.logo-block{
+    @include mq(mobile-only){
+        display: inline-block;
+        padding-left: auto;
+        padding-right: auto;
+        margin-bottom: 60px;
+   
+    }
 }
 
 .logo-block__link {
+    display: flex;
+    justify-content: center;
     height: auto;
     padding: 0;
-    display: flex;
-    justify-content: flex-start;
     margin-bottom: 20px;
     color: var(--hero-text-color);
+    @include mq(desktop){
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 
-.footer-adress {
-    display: inline-flexbox;
-    justify-content: flex-start;
-}
+
 
 .adress__link {
     display: flex;
@@ -32,6 +54,9 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--hero-text-color);
+    @include mq(not-desktop){
+        justify-content: center;
+    }
 }
 
 .adress__link--second {
@@ -42,25 +67,38 @@
             color: var(--hero-text-color);
         }
 }
+.adress-element{
+    
+}
 .adress-element:not(:last-child) {
     margin-bottom: 9px;
 }
 
 .follow-us {
-    margin-left: 70px;
+    
     &__title {
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
             line-height: 16px;
+            
             margin-bottom: 20px;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--hero-text-color);
         }
+    @include mq(desktop){
+        margin-left: 70px;
+        text-align: start;
+    }
 }
 .follow-us__list {
+    
     display: flex;
+    justify-content: center;
+    @include mq(desktop){
+        justify-content: flex-start;
+    }
 }
 
 .follow-us__element:not(:first-child) {
@@ -97,7 +135,8 @@
 
 
 .sign {
-    margin-left: 94px;
+    width: 100%;
+    
 
     &__title {
             font-weight: 700;
@@ -105,21 +144,32 @@
             line-height: 16px;
             letter-spacing: 0.03em;
             color: var(--hero-text-color);
+            @include mq(desktop){
+                display: flex;
+                justify-content: flex-start;
+            }
     }
     &__form {
             display: flex;
-        
             margin-top: 20px;
+            @include mq(not-desktop){
+                flex-direction: column;
+            }
     }
     &__input {
             display: inline-flex;
             padding: 15px 16px;
-            width: 358px;
+            width: 100%;
+            max-width: 450px;
             height: 50px;
             background-color: transparent;
             color: var(--hero-text-color);
             border-radius: 4px;
             border: 1px solid rgba(255, 255, 255, 0.3);
+            @include mq(not-desktop){
+                margin-left:auto;
+                margin-right: auto;
+            }
     }
     &-button {
         display: flex;
@@ -136,6 +186,11 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         color: var(--hero-text-color);
+        @include mq(not-desktop){
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     .sign-button__jet {
         width: 24px;
@@ -145,6 +200,14 @@
         background-position: center;
         fill: var(--hero-text-color);
         background-image: url("../images/Presprite/jet.svg");
+        }
+    
+    @include mq(desktop){
+            margin-left: 94px;
+        }
+    @include mq(not-desktop){
+            flex-direction: column;
+            margin-top: 60px;
         }
 }
 

@@ -25,34 +25,53 @@
 		<div class="container header-division">
 			<nav class=" header-nav">
 				<a href="./" class="logo" lang="en"><span class="logo--colour">Web</span>Studio</a>
-				<ul class="header-nav__list">
-					<li class="header-nav__element"><a class="header-nav__link header-nav__link--current"
-							href="./index.html">Студия</a></li>
-					<li class="header-nav__element"><a class="header-nav__link" href="./portfolio.html">Портфолио</a>
-					</li>
-					<li class="header-nav__element"><a class="header-nav__link" href="">Контакты</a></li>
-				</ul>
+				<button type="button" class="mobile-menu" aria-expanded="false" aria-controls="menu-container"
+					data-menu-button>
+					<svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+
+						<use class="icon-menu" href="./images/Presprite/Sprite.svg#burger"></use>
+						<use class="icon-cross" href="./images/Presprite/Sprite.svg#close-mobile-menu"></use>
+					</svg>
+				</button>
+				<div class="menu-container" id="menu-container" data-menu>
+					<ul class="header-nav__list">
+						<li class="header-nav__element"><a class="header-nav__link header-nav__link--current"
+								href="./index.html">Студия</a></li>
+						<li class="header-nav__element"><a class="header-nav__link"
+								href="./portfolio.html">Портфолио</a>
+						</li>
+						<li class="header-nav__element"><a class="header-nav__link" href="">Контакты</a></li>
+					</ul>
+					<div class="header-auth">
+						<ul class="header-auth__list">
+							<li class="header-auth__element" lang="en"><a class="header-auth__link--first"
+									href="mailto:info@devstudio.com">
+									<svg class="header-auth-icons" width="16" height="12">
+										<use href="./images/Presprite/Sprite.svg#icon-envelope-hover"></use>
+									</svg>
+									info@devstudio.com</a></li>
+							<li class="header-auth__element"><a class="header-auth__link--second"
+									href="tel:+380961111111">
+									<svg class="header-auth-icons" width="10" height="16">
+										<use href="./images/Presprite/Sprite.svg#icon-phone"></use>
+									</svg>
+									+38 096 111 11 11</a></li>
+						</ul>
+						<ul class="menu-container__socials">
+							<li menu-container__element><a class="menu-container__link" href="">Instagramm</a></li>
+							<li menu-container__element><a class="menu-container__link" href="">Twitter</a></li>
+							<li menu-container__element><a class="menu-container__link" href="">Facebook</a></li>
+							<li menu-container__element><a class="menu-container__link" href="">LinkeIn</a></li>
+							</l>
+					</div>
+				</div>
 			</nav>
-			<div class="header-auth">
-				<ul class="header-auth__list">
-					<li class="header-auth__element" lang="en"><a class="header-auth__link"
-							href="mailto:info@devstudio.com">
-							<svg class="header-auth-icons" width="16" height="12">
-								<use href="./images/Presprite/Sprite.svg#icon-envelope-hover"></use>
-							</svg>
-							info@devstudio.com</a></li>
-					<li class="header-auth__element"><a class="header-auth__link" href="tel:+380961111111">
-							<svg class="header-auth-icons" width="10" height="16">
-								<use href="./images/Presprite/Sprite.svg#icon-phone"></use>
-							</svg>
-							+38 096 111 11 11</a></li>
-				</ul>
-			</div>
+
 		</div>
 	</header>
 	<!-- Основная часть -->
 	<!-- Герой -->
-	<section class="hero">
+	<!-- <section class="hero">
 
 		<div class="overlay">
 			<h1 class="hero-text"> ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА </h1>
@@ -117,9 +136,9 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!-- Секция "Наши преимущества"-->
-	<section class="section">
+	<!-- <section class="section">
 		<div class="container">
 			<h2 class="adventeges-header-start visually-hidden">Наши преимущества</h2>
 			<ul class="adventeges-block">
@@ -146,9 +165,9 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!-- Секция "Чем занимаемся"-->
-	<section class=" section what-we-do">
+	<!-- <section class=" section what-we-do">
 		<div class="container">
 
 			<h2 class="what-we-do-header">Чем мы занимаемся</h2>
@@ -173,9 +192,9 @@
 				</li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!--Наша команда-->
-	<section class="team-section section">
+	<!-- <section class="team-section section">
 		<div class="container">
 			<h2 class="team-section-header">Наша команда</h2>
 			<ul class="team-list">
@@ -270,10 +289,10 @@
 
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!-- Наши клиенты -->
 
-	<section class="clients-section section">
+	<!-- <section class="clients-section section">
 		<div class="container">
 			<h2 class="clients-section-header">Постоянные клиенты</h2>
 			<ul class="clients-list">
@@ -298,7 +317,7 @@
 						</svg></a></li>
 			</ul>
 		</div>
-	</section>
+	</section> -->
 	<!-- Нижняя часть-->
 
 	<footer class="footer">
@@ -345,6 +364,7 @@
 		</div>
 	</footer>
 	<script src="./js/modal.js"></script>
+	<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

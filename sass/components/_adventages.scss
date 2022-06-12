@@ -63,14 +63,18 @@
 
 /* What we do */
 .what-we-do {
+    display: none;
 
-    padding-top: 0px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: inherit;
+    @include mq(desktop-only) {
+        display: block;
+        padding-top: 0px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: inherit;
+    }
 }
 
 .what-we-do-list {

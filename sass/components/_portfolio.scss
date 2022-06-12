@@ -7,13 +7,25 @@
 
 .filler__list {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: start;
     margin-bottom: 50px;
+    @include mq(tablet){
+        justify-content: center;
+    }
+    @include mq(tablet-only){
+        margin-bottom: 30px;
+    }
 
 }
 
-.filler__element:not(:first-child) {
-    margin-left: 8px;
+.filler__element:not(:last-child) {
+    margin-right: 8px;
+}
+.filler__element:not(:nth-last-child(-n+2)) {
+    @include mq(mobile-only){
+    margin-bottom: 15px;
+    }
 }
 
 .filler__buttons {
@@ -40,25 +52,44 @@
 
 
 .projects__list {
-    display: flex;
-    flex-wrap: wrap;
-
+        display: flex;
+        flex-wrap: wrap;
+   
 }
 
 .projects__element {
     background: #FFFFFF;
     box-sizing: border-box;
-    box-sizing: border-box;
+    @include mq(tablet-only){
+        max-width: 354px;
+        flex-basis: calc((100% - 30px) / 2);
+        
+    }
+    @include mq(desktop){
     margin-left: 30px;
+    }
+        &:nth-child(2n-1) {
+        @include mq(tablet-only){
+        margin-right: 30px;
+     }
+    }
+    &:not(:last-child){
+        @include mq(tablet-only){
+            margin-bottom: 30px;
+        }
+    }
     &:hover,
     &:focus {
-            outline: transparent;
+        outline: transparent;
     }
     &:nth-child(-n+6) {
+        @include mq(desktop){
             margin-bottom: 30px;
+        }
     }
-    
+   
     &:nth-child(3n+1) {
+        @include mq(desktop){
             margin-left: 0px;
     }
 
@@ -72,6 +103,7 @@
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
+    
 
 }
 
@@ -91,14 +123,13 @@
 .projects__thumb {
     position: relative;
     overflow: hidden;
-
 }
 
 .card-overlay {
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;    
     top: 0;
     left: 0;
     width: 100%;
@@ -109,9 +140,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .projects__link:hover &,
     .projects__link:focus & {
-            transform: translateY(0%);
-    
-    
+        transform: translateY(0%);
     }
 
 }
@@ -125,7 +154,6 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
     transition: opacity 250ms ubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .projects-discription__title {
@@ -142,4 +170,5 @@
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--contact-links-color);
+}
 }
