@@ -1,15 +1,21 @@
 /* Adventeges */
 .adventeges-block {
     display: flex;
+    
     text-align: left;
+    margin-bottom: 30px;
+    @include mq(not-desktop){
+        flex-wrap: wrap;
+    }
+    
 
 }
 
 .adventeges-block-element {
-    margin-left: 30px;
     &::before {
             display: block;
             content: "";
+            max-width: 450px;
             margin-bottom: 30px;
             height: 120px;
             border-radius: 4px;
@@ -17,9 +23,22 @@
             background-position: center;
             background-color: #F5F4FA;
         }
-    &:first-child {
-                    margin-left: 0px;
-                }
+        @include mq(tablet){
+            max-width: 354px;
+            &:nth-child(2n){
+                margin-left: 30px;
+            }
+            &:nth-child(-n+2){
+                margin-bottom: 30px;
+            }
+        }
+     @include mq(desktop){
+        margin-left: 30px;
+        &:first-child {
+            margin-left: 0px;
+        }
+    
+}
 }
 
 
@@ -45,27 +64,37 @@
 .adventeges-header-text {
 
     margin-bottom: 10px;
-    width: 270px;
     height: 16px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
     color: inherit;
+    @include mq(mobile-only){
+        text-align: center;
+    }
+    @include mq(desktop){
+        width: 270px;
+    }
 }
 
 .adventeges-text {
     height: 75px;
-    width: 270px;
+    
     font-size: 14px;
     line-height: 1.71;
     color: var(--contact-links-color);
+    @include mq(desktop) {
+            width: 270px;
+        }
 }
 
 /* What we do */
+.section.what-we-do{
+    @include mq(not-desktop) {
+            display: none;
+        }
+}
 .what-we-do {
-    display: none;
-
-    @include mq(desktop-only) {
         display: block;
         padding-top: 0px;
         font-weight: 700;
@@ -74,7 +103,7 @@
         text-align: center;
         letter-spacing: 0.03em;
         color: inherit;
-    }
+        
 }
 
 .what-we-do-list {

@@ -634,6 +634,180 @@ img {
   }
 }
 
+/* Adventeges */
+.adventeges-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .adventeges-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.adventeges-block-element::before {
+  display: block;
+  content: "";
+  max-width: 450px;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+}
+
+@media screen and (min-width: 768px) {
+  .adventeges-block-element {
+    max-width: 354px;
+  }
+  .adventeges-block-element:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .adventeges-block-element:nth-child(-n+2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adventeges-block-element {
+    margin-left: 30px;
+  }
+  .adventeges-block-element:first-child {
+    margin-left: 0px;
+  }
+}
+
+.icon-sattelite::before {
+  background-image: url("../images/Presprite/sattelite.svg");
+}
+
+.icon-clock::before {
+  background-image: url("../images/Presprite/clock.svg");
+}
+
+.icon-diagrame::before {
+  background-image: url("../images/Presprite/diagrame.svg");
+}
+
+.icon-austronavt::before {
+  background-image: url("../images/Presprite/austronavt.svg");
+}
+
+.adventeges-header-text {
+  margin-bottom: 10px;
+  height: 16px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+@media screen and (max-width: 767.98px) {
+  .adventeges-header-text {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .adventeges-header-text {
+    width: 270px;
+  }
+}
+
+.adventeges-text {
+  height: 75px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--contact-links-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .adventeges-text {
+    width: 270px;
+  }
+}
+
+/* What we do */
+@media screen and (max-width: 1199.98px) {
+  .section.what-we-do {
+    display: none;
+  }
+}
+
+.what-we-do {
+  display: block;
+  padding-top: 0px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: inherit;
+}
+
+.what-we-do-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.what-we-do-element {
+  position: relative;
+  height: 294px;
+}
+
+.what-we-do-element:not(:first-child) {
+  margin-left: 30px;
+}
+
+.what-we-do-overlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.what-we-do-overlay-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--hero-text-color);
+}
+
+.what-we-do-header {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
 /* Team */
 .team-section {
   font-weight: 900;
