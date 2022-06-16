@@ -25,7 +25,7 @@
 .team-list {
     margin-top: 50px;
     display: flex;
-    flex-wrap: wrap;
+    
     justify-content: center;
 
 }
@@ -37,8 +37,8 @@
     border-radius: 0px 0px 4px 4px;
     @include mq(mobile-only){
         margin-bottom: 30px;
-        width: 450px;
-        height: 622px;
+
+        
     }
     @include mq(tablet-only){
         width: 354px;

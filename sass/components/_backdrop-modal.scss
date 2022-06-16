@@ -290,10 +290,11 @@
 .close-button-svg {
     width: 18px;
     height: 18px;
+    fill: currentColor;
+}
 
-    &:active,
-    &:focus {
-        border: 1px solid var(--logo-span-color);
-        fill: var(--logo-span-color);
-    }
+.close-button:active,
+.close-button:focus {
+    border: 1px solid var(--logo-span-color);
+    fill: var(--logo-span-color);
 }
