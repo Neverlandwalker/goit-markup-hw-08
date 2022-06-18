@@ -1,10 +1,11 @@
 /* Adventeges */
 .adventeges-block {
-    display: flex;
+    display: block;
     
     text-align: left;
-    margin-bottom: 30px;
-    @include mq(not-desktop){
+    
+    @include mq(tablet){
+        display: flex;
         flex-wrap: wrap;
     }
     
@@ -12,6 +13,9 @@
 }
 
 .adventeges-block-element {
+    @include mq(mobile-only){
+        margin-bottom: 30px;
+    }
     &::before {
             display: block;
             content: "";

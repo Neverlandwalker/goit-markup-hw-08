@@ -75,7 +75,9 @@
 }
 
 .follow-us {
-    
+    @include mq(mobile-only){
+        margin-bottom: 60px;
+    }
     &__title {
             font-style: normal;
             font-weight: 700;
@@ -91,6 +93,7 @@
         margin-left: 70px;
         text-align: start;
     }
+    
 }
 .follow-us__list {
     
@@ -142,6 +145,7 @@
             font-weight: 700;
             font-size: 14px;
             line-height: 16px;
+            margin-bottom: 20px;
             letter-spacing: 0.03em;
             color: var(--hero-text-color);
             @include mq(desktop){
@@ -170,6 +174,9 @@
                 margin-left:auto;
                 margin-right: auto;
             }
+            @include mq(desktop){
+                width: 358px;
+            }
     }
     &-button {
         display: flex;
@@ -187,9 +194,12 @@
         border-radius: 4px;
         color: var(--hero-text-color);
         @include mq(not-desktop){
-            margin-top: 20px;
+
             margin-left: auto;
             margin-right: auto;
+        }
+        @include mq(desktop){
+           
         }
     }
     .sign-button__jet {
@@ -207,7 +217,7 @@
         }
     @include mq(not-desktop){
             flex-direction: column;
-            margin-top: 60px;
+            
         }
 }
 

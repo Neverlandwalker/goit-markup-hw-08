@@ -43,7 +43,7 @@
     }
     @include mq(tablet-only){
         width: 354px;
-        height: 536px;
+        
         &:nth-child(2n){
             margin-left: 30px;
         }
