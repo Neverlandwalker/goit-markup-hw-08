@@ -795,7 +795,6 @@ img {
   padding: 40px 40px;
   max-height: 609px;
   max-width: 450px;
-  width: 100%;
   z-index: 110;
   background-color: #ffffff;
   border-radius: 4px;
@@ -806,6 +805,7 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .modal {
+    width: 100%;
     max-width: 450px;
   }
 }
