@@ -2011,9 +2011,8 @@ img {
   border-left: 1px solid #EEEEEE;
   border-right: 1px solid #EEEEEE;
   border-bottom: 1px solid #EEEEEE;
-  float: left;
-  width: 1000px;
-  overflow: auto;
+  overflow-y: auto;
+  text-align: justify;
 }
 
 .projects__link {
@@ -2099,6 +2098,8 @@ img {
 }
 
 .projects-discription__text {
+  width: 100%;
+  height: 100%;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
