@@ -158,14 +158,27 @@
 
 .card-overlay__text {
     position: absolute;
-    width: 322px;
-    height: 168px;
+    padding: 0 24px;
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: auto;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
     color: #FFFFFF;
     transition: opacity 250ms ubic-bezier(0.4, 0, 0.2, 1);
+    @include mq(mobile){
+        padding: 77px 24px;
+    }
+    @include mq(tablet){
+        padding: 49px 24px;
+
+    }
+    @include mq(desktop){
+        padding: 63px 24px;
+    }
 
 }
 
@@ -179,8 +192,6 @@
 }
 
 .projects-discription__text {
-    width: 100%;
-    height: 100%;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
