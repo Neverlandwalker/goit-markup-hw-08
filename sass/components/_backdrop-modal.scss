@@ -33,7 +33,7 @@
     @include mq(mobile-only){
         max-width: 100%;
     }
-    @include mq(desktop{
+    @include mq(desktop){
         max-width: 528px;
         max-height: 581px;
     }
@@ -55,7 +55,10 @@
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-desktop/herobackground_ds@2x.jpg);
     }
     @include mq(mobile-only){
-        padding: 118px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        padding-right: 0px;
+        padding-left: 0px;
         height: 400px;
         
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Hero-mobile/herobackground_mob.jpg);
@@ -64,7 +67,10 @@
             }
     }
     @include mq(tablet-only){
-        padding: 118px;
+        padding-top: 118px;
+        padding-bottom: 118px;
+        padding-right: 0px;
+        padding-left: 0px;
         height: 400px;
        
             
