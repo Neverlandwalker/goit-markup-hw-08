@@ -249,7 +249,9 @@ img {
 }
 
 .menu-container {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1747,6 +1749,7 @@ img {
 }
 
 .sign {
+  margin-top: 60px;
   width: 100%;
 }
 
