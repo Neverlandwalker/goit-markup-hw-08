@@ -727,6 +727,20 @@ img {
   height: 50px;
   border-radius: 4px;
   background-color: var(--filler-colour);
+}
+
+.hero-button {
+  height: 50px;
+  padding: 10px 32px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: inherit;
+  color: var(--hero-text-color);
+  z-index: 2;
+  cursor: pointer;
   -webkit-animation: animate 3000ms infinite 1000ms;
           animation: animate 3000ms infinite 1000ms;
 }
@@ -775,20 +789,6 @@ img {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
-}
-
-.hero-button {
-  height: 50px;
-  padding: 10px 32px;
-  border: none;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  background-color: inherit;
-  color: var(--hero-text-color);
-  z-index: 2;
-  cursor: pointer;
 }
 
 .hero-text {
